@@ -1,0 +1,127 @@
+.contact-section {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg-gradient);
+}
+
+.contact-center {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.contact-icon-bg {
+  background: var(--color-secondary);
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 2px 12px rgba(37,99,235,0.10);
+}
+
+.contact-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin-bottom: 0.5rem;
+}
+
+.contact-desc {
+  color: var(--color-text-secondary);
+  font-size: 1.15rem;
+  margin-bottom: 2.5rem;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(37,99,235,0.08);
+  padding: 2rem 2.5rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+  min-width: 320px;
+}
+
+.contact-email {
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: color 0.2s;
+}
+.contact-email:hover, .contact-email:focus {
+  color: var(--color-primary-light);
+  text-decoration: underline;
+  outline: none;
+}
+
+.contact-connect-label {
+  font-weight: 600;
+  color: var(--color-text-main);
+  margin-bottom: 10px;
+}
+
+.contact-socials {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+}
+
+.contact-social {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
+  transition: background 0.2s, color 0.2s;
+}
+
+.contact-linkedin {
+  background: var(--color-primary);
+  color: #fff;
+}
+.contact-linkedin:hover, .contact-linkedin:focus {
+  background: var(--color-primary-light);
+  color: #fff;
+  outline: none;
+}
+
+.contact-emailicon {
+  background: var(--color-accent);
+  color: #fff;
+}
+.contact-emailicon:hover, .contact-emailicon:focus {
+  background: #059669;
+  color: #fff;
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .contact-card {
+    padding: 1.2rem 0.5rem;
+    min-width: 0;
+    width: 100%;
+  }
+  .contact-title {
+    font-size: 1.5rem;
+  }
+  .contact-desc {
+    font-size: 1rem;
+  }
+} 
